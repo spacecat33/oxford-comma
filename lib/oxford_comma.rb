@@ -11,3 +11,14 @@ def oxford_comma(array)
     array.join (', ')
     end
 end
+
+#or
+
+def oxford_comma(array)
+    if array.length >= 3
+    array[-1] = "and #{array[-1]}"
+    array.join (', ')
+    else 
+    array.join(" and ")
+    end
+end
